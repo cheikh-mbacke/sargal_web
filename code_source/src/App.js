@@ -1,11 +1,15 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
 import { NavBar } from './components'
 function App() {
   return (
-    <div>
+    <>
+      <header>
       <NavBar />
-    </div>
+    </header>
+    <main>
+      <h1>Hello world !</h1>
+    </main>
+    </>
   );
 }
 
