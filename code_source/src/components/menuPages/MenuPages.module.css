@@ -1,0 +1,19 @@
+.menuPages_container{
+    position: relative;
+}
+.menuPages_container span{
+    color: #119744;
+}
+.menuPages{
+    position: absolute;
+    top: 10px;
+    left: 3em;
+    width: 300pxpx;
+    height: 100px;
+    border-radius: 8px;
+    padding: 30px;
+    background: #ffff;
+    box-shadow: 0px 15px 35px 0px rgb(0 0 0 / 10%);
+    transform: translateX(-50%);
+    border: 0.5px solid #119744;
+}

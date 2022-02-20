@@ -6,7 +6,7 @@ function App() {
       <header>
       <NavBar />
     </header>
-    <main>
+    <main style={{background: "blue"}}>
       <h1>Hello world !</h1>
     </main>
     </>

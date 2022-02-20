@@ -1,0 +1,71 @@
+.navbar-part {
+    background: #ffffff;
+}
+.megamenu{
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid red;
+    position: absolute;
+    top: 213px;
+    left: 50%;
+    width: 1180px;
+    height: 500px;
+    border-radius: 8px;
+    padding: 30px;
+    background: #ffffff;
+    border: 0.5px solid #119744;
+    opacity: 0;
+    -webkit-box-shadow: 0px 15px 35px 0px rgb(0 0 0 / 10%);
+    box-shadow: 0px 15px 35px 0px rgb(0 0 0 / 10%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    opacity: 1;
+
+}
+.rowContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+
+}
+.megamenu_wrap{
+    position: relative;
+    width: 100%;
+    padding-right: 3em;
+}
+.megamenu_title{
+    padding-bottom: 1em;
+    border-bottom: 2px solid #e2e2e2;
+}
+.megamenu_title_bar{
+    position: absolute;
+    top: 43px;
+    display: inline-block;
+    width: 5em;
+    height: 2px;
+    background-color: #0e833b;
+}
+.megamenu_wrap{
+    margin: 0 1em 0 1em;
+}
+.megamenu_list{
+    border-left: 1px solid #e2e2e2;
+    list-style: none;
+    padding: 0 0 0.5em 0.5em;
+}
+.megamenu_list li {
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+}
+.megamenu_list li:hover{
+    background-color: #f5f5f5;
+}
+.megamenu_list li:hover > a{
+    color: #0e833b;
+}

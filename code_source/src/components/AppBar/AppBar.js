@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useState } from 'react'
 import styles from './AppBar.module.css'
 import sargal_logo from '../../assets/images/sargal.png'
 import user from '../../assets/images/user.png'
@@ -9,9 +9,14 @@ import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons'
 import { faAt } from '@fortawesome/free-solid-svg-icons'
-
-
+import { MegaMenu, MenuProducts, MenuPages } from '..'
 export default function AppBar() {
+
+    const [shopMenu, setShopMenu] = useState(false)
+
+    const displayMenu = (menu) =>{
+        menu(value => !value)
+    }
     return (
         <>
             <nav className={styles.navBarContainer}>
@@ -65,20 +70,31 @@ export default function AppBar() {
                 <div className={styles.onglets}>
                     <ul className={styles.onglets_list}>
                         <li>
-                            <a href='/'>
+                            <a href='#'>
                                 Accueil&nbsp;&nbsp;<FontAwesomeIcon icon={faAngleDown} />
                             </a>
+                            <MenuPages />
                         </li>
                         <li>
-                            <a href='/'>
+                            <a href='#' onClick={() => displayMenu (setShopMenu)}>
                                 Boutique&nbsp;&nbsp;<FontAwesomeIcon icon={faAngleDown} />
                             </a>
+                            <MegaMenu />
                         </li>
+                        <li>
+                            <a href='#'>
+                                Nos Produits&nbsp;&nbsp;<FontAwesomeIcon icon={faAngleDown} />
+                            </a>
+                            <MenuProducts />
+                        </li>
+                        
                         <li>
                             <a href='/'>
                                 Pages&nbsp;&nbsp;<FontAwesomeIcon icon={faAngleDown} />
                             </a>
+                            
                         </li>
+
                         <li>
                             <a href='/'>
                                 Authentic&nbsp;&nbsp;<FontAwesomeIcon icon={faAngleDown} />
